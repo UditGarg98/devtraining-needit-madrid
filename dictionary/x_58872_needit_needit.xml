@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element choice="1" label="Caller" max_length="40" name="caller" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="-- New choice --" value="-- New choice --"/>
+            </choice>
+        </element>
+        <element label="Start Date" mandatory="true" max_length="40" name="u_glide_time_3" type="glide_time"/>
+        <element label="End Date" mandatory="true" max_length="40" name="u_glide_time_4" type="glide_time"/>
+        <element label="user list" mandatory="true" max_length="32" name="u_reference_2" reference="sys_user" type="reference"/>
+    </element>
+</database>
